@@ -1,0 +1,1237 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+}
+/* logo krish */
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+.logo {
+  width: 50px; /* Adjust logo size */
+  height: 50px; /* Adjust logo size */
+  border-radius: 50%; /* Make it circular */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .logo {
+      width: 40px; /* Smaller logo for smaller screens */
+      height: 40px; /* Smaller logo for smaller screens */
+  }
+}
+
+/* end logo krish */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(0,0,0,0.8);
+  box-shadow: 10px 10px 20px #f3efef,
+               -10px -10px 20px #ddd;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  
+  
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  padding: 10px;
+  
+}
+
+nav ul li a:hover {
+  
+  color: red;
+  background-color: aqua;
+  border-radius: 9px;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #000000
+  
+}
+
+p {
+  font-size: 18px;
+}
+/* arpita */
+
+/* start of home section */
+.home-section {
+    position: relative; /* Position relative to place the overlay */
+    overflow: hidden;
+    padding: 128px 0px; /* Padding for spacing */
+    color: #375fd7; /* Text color */
+}
+
+.home-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./backkrish.png'); /* Add your background image here */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    opacity: 0.5; /* Set the desired opacity */
+    z-index: 0; /* Behind other content */
+}
+
+.home-section .container {
+    position: relative; /* Ensure text and image are above the background */
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 1; /* Ensure container is above the background */
+}
+
+.home-image {
+    flex: 1;
+}
+
+.home-text {
+    flex: 1;
+    padding-left: 20px; /* Space between image and text */
+}
+
+.home-section h1,
+.home-section p {
+    position: relative; /* Position relative to sit above the overlay */
+    color: #fff; /* Text color */
+    z-index: 2; /* Make sure text is above the overlay */
+}
+
+/* Add any additional responsive styles below */
+
+.home-section {
+  position: relative; /* Position relative to place the overlay */
+  overflow: hidden;
+  visibility: visible; /* Hide overflow if needed */
+}
+
+.home-section img {
+  width: 100%; /* Make sure the image covers the section */
+  height: auto; /* Maintain aspect ratio */
+  filter: contrast(1.5); /* Increase image contrast further */
+  /* Optional: darken the image */
+  /* filter: brightness(0.5); */
+  box-shadow: -3px 3px 3px 3px rgb(13, 13, 108);
+  border-radius: 9px;
+  padding: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for improved contrast */
+  z-index: 1; /* Make sure overlay is on top */
+}
+
+.home-section h1,
+.home-section p {
+  position: relative; /* Position relative to sit above the overlay */
+  color: #fff; /* Text color */
+  z-index: 2; /* Make sure text is above the overlay */
+}
+
+/* arpita end */
+/* Home Section */
+.home-section {
+  padding: 128px 0px;
+  background-color: #ffffff;
+  color: #375fd7;
+}
+
+.home-section .container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home-image {
+  flex: 1;
+}
+
+/* .home-image img {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #000000; 
+  opacity: 1; 
+    
+} */
+
+.home-text {
+  flex: 1;
+  padding-left: 20px; /* Space between image and text */
+}
+
+.home-text h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #173db1;
+  margin-bottom: 20px;
+}
+
+.home-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .home-section .container {
+    flex-direction: column;
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .home-image {
+    margin-bottom: 20px; /* Space between image and text on small screens */
+    padding-left: 0; /* Remove left padding */
+    box-shadow: none;
+  }
+
+  .home-text {
+    padding-left: 0; /* Remove left padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-text h1 {
+    font-size: 36px; /* Smaller font size for headings */
+  }
+
+  .home-text p {
+    font-size: 18px; /* Smaller font size for paragraphs */
+  }
+}
+
+/* end of home section */
+
+
+/* Responsive Styles */
+/* navigation bar */
+/* General Navigation Styles */
+header {
+  background-color: #101a8e;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo h1 {
+  color: #fff;
+  margin: 0;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: row; /* Ensure items are in a row on smaller screens */
+      justify-content: center; /* Center items horizontally */
+      flex-wrap: wrap; /* Allow wrapping if needed */
+  }
+
+  .nav-links ul {
+      display: flex;
+      flex-direction: row; /* Items in a row */
+      justify-content: center; /* Center items horizontally */
+  }
+
+  .nav-links li {
+      margin: 0 10px;
+  }
+
+  .nav-links a {
+      padding: 8px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* home section */
+@media (max-width: 1024px) {
+  .home-section {
+      height: 300px; /* Adjust height for tablets */
+      padding: 15px;
+  }
+
+  .home-section h2 {
+      font-size: 28px; /* Adjust font size for tablets */
+  }
+
+  .home-section p {
+      font-size: 16px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+      height: 250px; /* Adjust height for mobile devices */
+      padding: 10px;
+  }
+
+  .home-section h2 {
+      font-size: 24px; /* Adjust font size for mobile devices */
+  }
+
+  .home-section p {
+      font-size: 14px; /* Adjust font size for mobile devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-section {
+      height: 200px; /* Adjust height for smaller screens */
+      padding: 5px;
+  }
+
+  .home-section h2 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .home-section p {
+      font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+/* my add for redmi note 10 */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  /* Additional responsive styles */
+}
+nav ul {
+  display: flex;
+  flex-direction: row; /* Change to column if needed */
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
+/* end of the add redmi note 10 */
+/* fade in up */
+
+.fade-in-up {
+opacity: 0; /* Initially invisible */
+transform: translateY(30px); /* Start position: slightly below */
+transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth animation */
+}
+
+.fade-in-up.visible {
+opacity: 1; /* Fully visible */
+transform: translateY(0); 
+}
+
+
+/* end of faed in up */
+.home-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(255, 255, 255, 0.5); 
+  z-index: 0; /* Ensure overlay is behind the text */
+  filter: contrast(3);
+  
+}
+
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #040721;
+}
+
+.container {
+  display: flex;
+  flex-direction: row; /* Default for larger screens */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  flex: 1;
+  opacity: 0; /* Start hidden */
+  transform: translateX(50px); /* Start off-screen */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  padding: 0 20px; /* Padding for better spacing */
+}
+
+.about-text p {
+  color: #ffffff;
+  font-family:cursive;
+}
+
+#skm {
+  font-size: 40px;
+  color: rgb(255, 247, 0);
+}
+
+.about-image {
+  flex: 1;
+  opacity: 0; /* Start hidden */
+  transform: translateX(-50px); /* Start off-screen */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover; /* Makes sure the image doesn't distort */
+  max-height: 400px; /* Limit height on large screens */
+  transition: transform 0.3s ease;
+}
+
+/* Animation trigger */
+.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Move to original position */
+}
+
+/* Image hover effect */
+.about-image:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Responsive Styles for Tablets */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack vertically */
+    align-items: flex-start; /* Align to start */
+  }
+
+  .about-text, .about-image {
+    flex: none; /* Reset flex */
+    margin-bottom: 20px; /* Space between sections */
+    padding: 0 10px; /* Adjust padding */
+  }
+
+  .about-text {
+    transform: translateX(0); /* Remove initial transform for mobile */
+    padding: 0;
+  }
+
+  .about-image img {
+    max-height: 300px; /* Limit image height on medium screens */
+  }
+}
+
+/* Responsive Styles for Small Screens (Phones) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 40px 10px; /* Reduce padding */
+  }
+
+  h2 {
+    font-size: 24px; /* Smaller heading */
+  }
+
+  p {
+    font-size: 14px; /* Smaller text */
+  }
+
+  .about-text {
+    transform: translateX(0); /* No animation for mobile */
+    padding: 0;
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .about-image img {
+    max-height: 200px; /* Limit image size on small screens */
+  }
+
+  #skm {
+    font-size: 30px; /* Smaller font size */
+  }
+}
+
+/* end about section */
+
+/* Contact Section */
+.contact-section {
+  background-color: #eaeaea;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Styles */
+
+/* Devices between 768px and 1024px */
+@media (max-width: 1024px) {
+  nav ul {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  header {
+      padding: 15px 0;
+  }
+
+  .home-section h2 {
+      font-size: 30px;
+  }
+
+  .home-section p {
+      font-size: 20px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  .room h3 {
+      font-size: 22px;
+  }
+}
+
+/* Devices between 480px and 767px */
+@media (max-width: 767px) {
+  header, footer {
+      text-align: center;
+  }
+
+  .home-section h2 {
+      font-size: 28px;
+  }
+
+  .home-section p {
+      font-size: 18px;
+  }
+
+  h2 {
+      font-size: 22px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  .room h3 {
+      font-size: 20px;
+  }
+
+  form {
+      padding: 15px;
+  }
+
+  form button {
+      width: 100%;
+      font-size: 16px;
+  }
+}
+
+/* Mobile devices less than 480px */
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 20px;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  .home-section h2 {
+      font-size: 24px;
+  }
+
+  .home-section p {
+      font-size: 16px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  .room h3 {
+      font-size: 18px;
+  }
+
+  form {
+      padding: 10px;
+  }
+}
+/* FOR SMOOTH WEBSITE */
+/* Style the lightbox for smooth transitions */
+.lightbox {
+  visibility: hidden; /* Hide initially */
+  opacity: 0; /* Start hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Smooth transition for visibility and opacity */
+}
+
+.lightbox.visible {
+  visibility: visible; /* Show the lightbox */
+  opacity: 1; /* Fully visible */
+}
+
+/* Style the image inside the lightbox */
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Close button */
+.lightbox .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* END OF FOR SMOOTH WEBSITE */
+
+/* bubbble */
+.home-section {
+  position: relative; /* Required for positioning the bubble background */
+  padding: auto; /* Adjust padding for content */
+  text-align: center; /* Center the content */
+  color: #202124; /* Text color */
+  z-index: 1; /* Ensure content is above the bubbles */
+}
+
+.bubble-background {
+  position: absolute; /* Position the bubbles absolutely */
+  top: 0; /* Align to the top of the section */
+  left: 0; /* Align to the left of the section */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Prevent bubbles from overflowing */
+  z-index: 0; /* Place it behind the content */
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%; /* Make them circular */
+  opacity: 0.6; /* Set transparency */
+  animation: float 6s ease-in-out infinite; /* Animation */
+}
+
+/* Specific bubble sizes, positions, and colors */
+.bubble-1 {
+  background: rgba(255, 0, 0, 0.5); /* Red */
+  width: 80px;
+  height: 80px;
+  top: 20%;
+  left: 5%;
+}
+
+.bubble-2 {
+  background: rgba(0, 174, 255, 0.5); /* Blue */
+  width: 120px;
+  height: 120px;
+  top: 30%;
+  right: 10%;
+}
+
+.bubble-3 {
+  background: rgba(255, 215, 0, 0.5); /* Yellow */
+  width: 100px;
+  height: 100px;
+  top: 60%;
+  left: 30%;
+}
+
+.bubble-4 {
+  background: rgba(0, 255, 0, 0.5); /* Green */
+  width: 140px;
+  height: 140px;
+  top: 10%;
+  right: 15%;
+}
+
+.bubble-5 {
+  background: rgba(255, 165, 0, 0.5); /* Orange */
+  width: 60px;
+  height: 60px;
+  top: 70%;
+  left: 15%;
+}
+
+.bubble-6 {
+  background: rgba(128, 0, 128, 0.5); /* Purple */
+  width: 90px;
+  height: 90px;
+  top: 40%;
+  left: 50%;
+}
+
+/* Keyframes for the floating effect */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px); /* Float effect */
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .bubble {
+      animation-duration: 5s; /* Speed up the animation */
+  }
+
+  .bubble-1 { width: 60px; height: 60px; }
+  .bubble-2 { width: 100px; height: 100px; }
+  .bubble-3 { width: 80px; height: 80px; }
+  .bubble-4 { width: 120px; height: 120px; }
+  .bubble-5 { width: 50px; height: 50px; }
+  .bubble-6 { width: 70px; height: 70px; }
+
+  /* Position adjustments */
+  .bubble-1 { top: 25%; left: 10%; }
+  .bubble-2 { top: 35%; right: 5%; }
+  .bubble-3 { top: 60%; left: 25%; }
+  .bubble-4 { top: 5%; right: 10%; }
+  .bubble-5 { top: 70%; left: 10%; }
+  .bubble-6 { top: 45%; left: 40%; }
+}
+
+/* end of bubble */
+
+/* START OF SERVICE SECTION CSS 25/09/2024*/
+#services {
+  padding: 50px 0;
+  background-color: #0f0d4a;
+}
+
+.points-section {
+  text-align: center;
+}
+
+.points-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: Georgia, serif;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.points-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the boxes */
+  gap: 20px; /* Space between boxes */
+}
+
+.point {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 calc(30% - 20px); /* Responsive width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.point:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-color: yellow;
+}
+
+.point img {
+  max-width: 100%; /* Responsive image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for images */
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+.point h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+.point p {
+  font-size: 16px;
+  color: #09092f;
+  line-height: 1.5;
+  font-family: Georgia, serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .point {
+      flex: 1 1 calc(45% - 20px); /* Two boxes per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .point {
+      flex: 1 1 100%; /* One box per row on small screens */
+  }
+}
+
+/* END OF SERVICE SECTION CSS 25/09/2024*/
+
+/* Start of making Room Section */
+/* General Section Styling */
+#rooms {
+  padding: 60px 20px;
+  background-color: #0c083d;
+  text-align: center;
+}
+
+#rooms h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: Georgia, serif;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+/* Flex container for the rooms */
+.rooms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Room Box Styling */
+.room {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.room:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.room-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Transition for the image */
+}
+
+.room-image:active {
+  transform: scale(0.95); /* Click animation */
+}
+
+.room h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #3498db;
+}
+
+.room p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Book Now Button Styling */
+.book-now {
+  display: inline-block;
+  background-color: #28a745; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rooms-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .room {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .room {
+    width: 100%;
+    padding: 15px;
+  }
+}
+/* start animation */
+/* Add this CSS to your existing CSS file */
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.room {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  opacity: 0; /* Start hidden */
+}
+
+.room.visible {
+  opacity: 1; /* Make it visible when the class is added */
+  animation: slideInFromLeft 0.6s forwards; /* Animation from left */
+}
+
+/* end animation */
+/* End of making Room Section */
+
+/* Start memory section css */
+.memory-section {
+  background: #040358;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.memory-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.memory-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ffe419;
+  font-family: cursive;
+}
+.memory-section .pat{
+color: red;
+}
+
+.memory-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.memory-box {
+  width: calc(25% - 20px); /* Four columns on large screens */
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(5, 19, 70, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.memory-box:hover {
+  transform: translateY(-10px) scale(1.08); /* Pop-up effect */
+  box-shadow: 0 12px 30px rgba(18, 6, 66, 0.6), 0 0 15px rgba(255, 255, 255, 0.6); /* Glowing box-shadow */
+}
+
+/* Image Pop-up Effect */
+.memory-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.memory-box:hover img {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.memory-box h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin: 15px 0 10px;
+}
+
+.memory-box p {
+  font-size: 1.1rem;
+  color: #080a39;
+  font-family: serif;
+}
+
+/* Initial animation for memory boxes */
+.memory-box {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.memory-box:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+.memory-box:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+
+/* For Tablets and Small Laptops */
+@media (max-width: 1024px) {
+  .memory-box {
+    width: calc(33.33% - 20px); /* Three columns */
+  }
+}
+
+/* For Large Mobile Devices */
+@media (max-width: 768px) {
+  .memory-box {
+    width: calc(50% - 20px); /* Two columns */
+  }
+
+  .memory-section h2 {
+    font-size: 2rem;
+  }
+
+  .memory-section p {
+    font-size: 1rem;
+  }
+
+  .memory-box img {
+    height: 180px; /* Adjust height for mobile */
+  }
+
+  .memory-box h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* For Phones */
+@media (max-width: 480px) {
+  .memory-box {
+    width: 100%; /* One column on small screens */
+  }
+
+  .memory-section {
+    padding: 40px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .memory-section h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  .memory-section p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  .memory-box img {
+    height: 150px; /* Adjust height for mobile */
+  }
+
+  .memory-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .memory-box p {
+    font-size: 0.9rem;
+  }
+}
+
+/* End of memory section css */
+
